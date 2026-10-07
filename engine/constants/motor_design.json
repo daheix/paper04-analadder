@@ -1,0 +1,27 @@
+{
+  "_comment": "默认电机设计 — UI未输入参数时的兜底产品; 实际运行必须经参数文件覆盖",
+  "R_shaft": 0.01,
+  "R_ri": 0.026,
+  "mag_t": 0.003,
+  "R_si": 0.03,
+  "slot_depth": 0.012,
+  "R_so": 0.05,
+  "slot_half_deg": 2.0,
+  "mag_half_deg": 33.75,
+  "n_slots": 12,
+  "n_poles": 4,
+  "p": 2,
+  "L_stack": 0.1,
+  "Nc": 100.0,
+  "magnetization": "radial",
+  "halbach_segments": 1,
+  "eccentricity_mm": 0.0,
+  "T_Magnet_C": 20.0,
+  "lc_air": 0.0005,
+  "lc_iron": 0.0012,
+  "lc_shaft": 0.002,
+  "_derived": {
+    "R_rm": "R_ri+mag_t",
+    "r_gap_mid": "0.5*(R_si+R_rm)"
+  }
+}

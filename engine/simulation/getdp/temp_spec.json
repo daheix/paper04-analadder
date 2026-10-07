@@ -1,0 +1,18 @@
+{
+  "_comment": "M100 温变磁体激励 口径锚点 — temp_spec.py 的常量载体; 温度来源=LPTN 磁体节点 (单向)",
+  "t_ref_C": 20.0,
+  "sensitivity_dT_K": 50.0,
+  "model": "Br(T)=Br20·(1+α_Br·(T−20)) 一阶线性可逆温变; Hc(T)=Hc0·k(T); μ_r 不随温变",
+  "disclosure": "线性近似口径: 未计饱和-温度交叉项; 对标 arXiv:2410.16240 饱和+温度非线性磁模型",
+  "anchors": {
+    "N35UH": {
+      "br20_T": 1.16,
+      "hc0_Am": 880400.0,
+      "alpha_br_per_K": -0.0012,
+      "lambda_m20_Wb": 0.9798,
+      "torque20_Nm": -0.8966,
+      "t_anchor1_C": 120.0,
+      "t_anchor2_C": 60.0
+    }
+  }
+}

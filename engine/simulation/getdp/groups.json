@@ -1,0 +1,14 @@
+{
+ "shaft": 1,
+ "rotor_iron": 2,
+ "magnet_N": 3,
+ "magnet_S": 4,
+ "airgap": 5,
+ "SlotAp": 6,
+ "stator_iron": 7,
+ "SlotCn": 8,
+ "SlotBp": 9,
+ "SlotAn": 10,
+ "SlotCp": 11,
+ "SlotBn": 12
+}

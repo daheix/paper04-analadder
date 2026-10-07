@@ -1,0 +1,21 @@
+{
+  "R_shaft": 0.01,
+  "R_ri": 0.01,
+  "mag_t": 0.019,
+  "R_si": 0.03,
+  "slot_depth": 0.012,
+  "R_so": 0.05,
+  "slot_half_deg": 2,
+  "mag_half_deg": 33.75,
+  "n_slots": 24,
+  "n_poles": 4,
+  "p": 2,
+  "L_stack": 0.08,
+  "Nc": 100.0,
+  "Br": 1.16,
+  "mur_mag": 1.05,
+  "magnetization": "radial",
+  "halbach_segments": 1,
+  "eccentricity_mm": 0
+
+}

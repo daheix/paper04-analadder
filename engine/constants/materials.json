@@ -1,0 +1,28 @@
+{
+  "_comment": "材料常量 — 50JN350 硅钢片 + N35UH NdFeB",
+  "steel_50JN350": {
+    "KH": 150.0,
+    "KE": 0.05,
+    "_desc": "Steinmetz 铁耗系数; KE·f²项, 50Hz@1T≈1.0W/kg=7650W/m³标定"
+  },
+  "copper": {
+    "RHO_20": 1.68e-08,
+    "FILL": 0.4,
+    "_desc": "电阻率Ω·m@20°C (IEC 60028 α=3.93e-3/K见physics); 槽填充率0.35-0.45典型"
+  },
+  "magnet_N35UH": {
+    "Br_20": 1.16,
+    "mur": 1.05,
+    "Hc0": 880400.0,
+    "ALPHA_BR": -0.0012,
+    "T_LIMIT_C": 120.0,
+    "KNEE_PERMEANCE": 0.1051,
+    "_desc": "Br@20°C T; Hc0 A/m (motor_mag_data.pro:15); α_Br /K; 膝点磁导率判据=JAC034"
+  },
+  "manufacturing": {
+    "punch_harden_width_mm": 0.5,
+    "k_manuf": 1.15,
+    "k_manuf_enabled": false,
+    "_desc": "M94 叠片工艺修正 — 冲剪硬化区宽度(单侧, 沿冲压轮廓)与铁损增量系数 k_manuf; Bertotti 铁损×k_manuf, 开关默认关 (k_manuf_enabled=false 即理想无硬化口径)"
+  }
+}

@@ -1,0 +1,71 @@
+{
+ "module": "M95",
+ "tool": "scipy least_squares (trf)",
+ "ident_model": "baseline-12s4p",
+ "params": {
+  "names": [
+   "Br",
+   "kw"
+  ],
+  "init": {
+   "Br": 1.16,
+   "kw": 0.9
+  },
+  "identified": {
+   "Br": 1.050671,
+   "kw": 0.912086
+  },
+  "bounds": {
+   "Br": [
+    0.8,
+    1.45
+   ],
+   "kw": [
+    0.5,
+    1.2
+   ]
+  }
+ },
+ "targets": {
+  "Bg1_T": 0.9155,
+  "lambda_m_Wb": 0.9798,
+  "torque_Nm": 0.8966
+ },
+ "targets_note": "Bg1/λm/T = baseline-12s4p reference_metrics (标定库真相源, 名义 FEM 逐位复现已验证: m95_runs/ident_nom)",
+ "residual_rel": {
+  "Bg1_T": -0.0,
+  "lambda_m_Wb": 0.005631,
+  "torque_Nm": -0.005695
+ },
+ "res_norm2_init": 0.163969,
+ "res_norm2": 0.008009,
+ "ident_tol_rel": 0.01,
+ "res_pass": true,
+ "sens_cond": 3.375,
+ "cond_max": 100.0,
+ "cond_pass": true,
+ "sens_col_norms": {
+  "Br": 1.819796,
+  "kw": 1.289863
+ },
+ "weak_identifiable": [],
+ "k_ecc_disclosure": {
+  "designed_model": "f_ecc=1/(1+k_ecc(e/g)^2) (M94 二阶平均折减)",
+  "fem_evidence": {
+   "eccentricity_mm": 0.5,
+   "Bg1_ecc_T": 0.9262,
+   "Bg1_nom_T": 0.9155,
+   "pole_mean_ecc_T": 0.8752,
+   "pole_mean_nom_T": 0.7585,
+   "lambda_m_ecc_Wb": 1.1032,
+   "fund_pct": 1.169,
+   "mean_pct": 15.386
+  },
+  "implied_k_ecc": -0.533364,
+  "bound_lo": 0.05,
+  "identifiable_in_bounds": false,
+  "root_cause": "磁路 Bg∝1/(hm+μr·g(θ)) 凸函数, 偏心使气隙平均磁密增大 (Jensen 不等式); FEM 基波/极均值均随 e 增大, 折减模型方向相反 → k_ecc 按折减口径不可辨识, 不入拟合 (禁静默兜底)",
+  "f_ecc_model_check": 0.987654
+ },
+ "status": "PASS"
+}

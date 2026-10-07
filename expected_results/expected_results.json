@@ -1,0 +1,27 @@
+{
+  "_readme": "Frozen expected results for paper04_analadder v0.1.0. Acceptance: regenerate sweeps via scripts/sweep_*.py and compare scalar table within +-1% (hashes must match byte-for-byte).",
+  "acceptance_tolerance_pct": 1.0,
+  "files": {
+    "data/sweep_a1.csv": "c706476a17636bab37cd643c5102bfe7bb674e20a2b4325ad90e3d8ec2dc6988",
+    "data/sweep_a2.csv": "1760e88eee03b973a425e617b6a6b08571d5823650d0fbcb7009919156b4d8c3",
+    "data/sweep_b.csv": "22734f805cf427d6ddb2755dba2cc2a9340bfd382c7baab75bc6a7f92ad3f915"
+  },
+  "scalars": {
+    "A1_cells": 48,
+    "A1_covered_cells_le1pct": 17,
+    "A1_coverage_pct": 35.42,
+    "A1_calibration_worst_err_pct": 0.917,
+    "A2_cells_b50": 15,
+    "A2_inner_worst_abs_err_pct": 0.862,
+    "A2_calibration_err_pct": 0.661,
+    "B_cells": 12,
+    "B_err1_narrow_pct": 15.86,
+    "B_err1_wide_pct": 10.17,
+    "B_errpole_narrow_pct": -7.58,
+    "B_errpole_wide_pct": -12.67
+  },
+  "figures": {
+    "figures/fig_coverage_a1a2.pdf": "05cdea8adcd5f2b724af212f794f98e0d51bbb4e8ae882eabaa52c1de960a377",
+    "figures/fig_failure_domains.pdf": "1ac89214a4c09f8fc17920542483693f07ffd0e1d6fb8cd9dbbe1ec0ff736e16"
+  }
+}

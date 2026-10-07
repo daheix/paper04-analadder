@@ -1,0 +1,106 @@
+{
+  "coupled_history": [
+    {
+      "iter": 1,
+      "Hc_Am": 859270.4,
+      "T_m_in": 40.0,
+      "T_cu_in": 40.0,
+      "Bg1_T": 0.895,
+      "pole_mean_T": 0.7263,
+      "T_dl_Nm": -0.9132,
+      "T_avg_Nm": 1.0259,
+      "P_cu_W": 5.34,
+      "P_fe_W": 4.738,
+      "R_ph_ohm": 39.137,
+      "T_winding": 57.24,
+      "T_magnet": 57.25,
+      "T_max": 57.25,
+      "B_max_stator_T": 2.9991
+    },
+    {
+      "iter": 2,
+      "Hc_Am": 841046.1,
+      "T_m_in": 57.25,
+      "T_cu_in": 57.24,
+      "Bg1_T": 0.8761,
+      "pole_mean_T": 0.7107,
+      "T_dl_Nm": -0.8966,
+      "T_avg_Nm": 1.0259,
+      "P_cu_W": 5.675,
+      "P_fe_W": 4.553,
+      "R_ph_ohm": 41.595,
+      "T_winding": 57.5,
+      "T_magnet": 57.51,
+      "T_max": 57.51,
+      "B_max_stator_T": 2.9384
+    }
+  ],
+  "coupled_final": {
+    "iter": 2,
+    "Hc_Am": 841046.1,
+    "T_m_in": 57.25,
+    "T_cu_in": 57.24,
+    "Bg1_T": 0.8761,
+    "pole_mean_T": 0.7107,
+    "T_dl_Nm": -0.8966,
+    "T_avg_Nm": 1.0259,
+    "P_cu_W": 5.675,
+    "P_fe_W": 4.553,
+    "R_ph_ohm": 41.595,
+    "T_winding": 57.5,
+    "T_magnet": 57.51,
+    "T_max": 57.51,
+    "B_max_stator_T": 2.9384
+  },
+  "efficiency_map": [
+    {
+      "js_peak_Am2": 1000000.0,
+      "i_pk_A": 0.1508,
+      "T_avg_Nm": 0.513,
+      "P_out_W": 161.15,
+      "P_cu_W": 1.42,
+      "P_fe_W": 4.94,
+      "eta_pct": 96.2,
+      "B_max_stator_T": 3.0028,
+      "R_ph_ohm": 41.632,
+      "T_cu_C": 57.5
+    },
+    {
+      "js_peak_Am2": 2000000.0,
+      "i_pk_A": 0.3016,
+      "T_avg_Nm": 1.0259,
+      "P_out_W": 322.3,
+      "P_cu_W": 5.68,
+      "P_fe_W": 4.955,
+      "eta_pct": 96.81,
+      "B_max_stator_T": 3.0696,
+      "R_ph_ohm": 41.632,
+      "T_cu_C": 57.5
+    },
+    {
+      "js_peak_Am2": 3000000.0,
+      "i_pk_A": 0.4524,
+      "T_avg_Nm": 1.5389,
+      "P_out_W": 483.46,
+      "P_cu_W": 12.78,
+      "P_fe_W": 4.981,
+      "eta_pct": 96.46,
+      "B_max_stator_T": 3.1364,
+      "R_ph_ohm": 41.632,
+      "T_cu_C": 57.5
+    },
+    {
+      "js_peak_Am2": 4000000.0,
+      "i_pk_A": 0.6032,
+      "T_avg_Nm": 2.0519,
+      "P_out_W": 644.61,
+      "P_cu_W": 22.721,
+      "P_fe_W": 5.015,
+      "eta_pct": 95.87,
+      "B_max_stator_T": 3.2032,
+      "R_ph_ohm": 41.632,
+      "T_cu_C": 57.5
+    }
+  ],
+  "note": "耦合: Hc(T_m) GetDP 反馈 + R_ph(T_w) LPTN 反馈; 效率: 公式法 T_avg + Steinmetz 铁耗, 机械损未计"
+}
